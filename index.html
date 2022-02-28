@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tabla Colores</title>
+        <link href="estilos_tabla_colores.css" rel="stylesheet" type="text/css">
+        <script src="campos_color.js" type="text/JavaScript"></script>
+    </head>
+    <body><center>
+        <br><br>
+        <p class="letra_1">Cambiar Propiedades de elementos</p>
+        <table border="3" width="60%" height="70%">
+        <form name="f_colores">
+            <tr align="center">
+                <td><p class="letra_2">Color Fondo</p></td>
+                <td><p class="letra_2">Color Texto</p></td>
+                <td><p class="letra_2">Resultado</p></td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <select name="color_fondo">
+                    <option value="#FFFFFF" selected>Blanco</option>
+                    <option value="#000000">Negro</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#001EFF">Azúl</option>
+                    <option value="#F8FF00">Amarillo</option>
+                  </select></td>
+                <td>
+                    <select name="color_texto">
+                    <option value="#000000" selected>Negro</option>
+                    <option value="#FFFFFF">Blanco</option>
+                    <option value="#FF0000">Rojo</option>
+                    <option value="#001EFF">Azúl</option>
+                    <option value="#F8FF00">Amarillo</option>
+                  </select></td>
+                <td>
+                    <textarea name="resultado" class="campo" cols="10" rows="10">
+                    Este es el resultado visual de la selección
+                    </textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+                    <input class="boton" name="b_ejecutar" type="button" value="Ejecutar" onclick="execute()">
+                </td>
+            </tr>
+        </form>
+        </table>
+    </center></body>
+</html>
